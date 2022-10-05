@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 import image from "../assets/images/logo.jpg";
@@ -39,7 +40,7 @@ export const Job = () => {
           <div className="flex flex-row items-center border px-4 py-2  rounded-md xl:flex mb-4 justify-between xl:items-center lg:items-center md:flex">
             <div className=" flex flex-row items-center ">
               <img
-                src={image}
+                src={x.logo}
                 alt=""
                 className=" sm:h-24 h-16 w-auto rounded-full"
               />
@@ -47,7 +48,7 @@ export const Job = () => {
               <div className=" flex flex-col ml-4">
                 <h5 className=" sm:text-xl text-sm ">{x.title}</h5>
                 <h5 className=" sm:text-xl text-sm ">{x.company}</h5>
-                <h5 className=" text-sm ">Africa</h5>
+                <h5 className=" text-sm ">{x.continent}</h5>
 
                 <div className=" flex flex-row">
                   <div className=" flex flex-row items-center">
@@ -110,7 +111,7 @@ export const Job = () => {
 
             <div className=" sm:flex hidden">
               <Link to={`/job/:${x.id}`}>
-                <button className=" text-white px-5 py-2.5 rounded-md bg-red-400">
+                <button className=" text-white px-5 py-2.5 rounded-md bg-indigo-500">
                   Apply
                 </button>
               </Link>

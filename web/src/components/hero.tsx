@@ -1,3 +1,4 @@
+import React from "react";
 
 import Navbar from "./navbar";
 
@@ -11,7 +12,6 @@ export const Hero = () => {
       value?.classList.add("hidden");
     }
   }
-
 
   return (
     <div>

@@ -1,4 +1,3 @@
-import React from "react";
 
 import Navbar from "./navbar";
 
@@ -16,7 +15,7 @@ export const Hero = () => {
   return (
     <div>
       <Navbar />
-      <div className=" ">
+      <div className="mt-16 ">
         <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
           <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 dark:text-gray-50 font-black leading-7 md:leading-10">
@@ -32,7 +31,7 @@ export const Hero = () => {
           </div>
           <div className="flex bg-purple-200 justify-center items-center  py-5 px-4">
             <form action="" className=" flex flex-row">
-              <div className="relative text-gray-600 focus-within:text-gray-400 mr-4">
+              <div className="relative w-full text-gray-600 focus-within:text-gray-400 mr-4">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                   <button
                     type="submit"
@@ -53,7 +52,7 @@ export const Hero = () => {
                 </span>
                 <input
                   type="search"
-                  name="q"
+                  name="search"
                   className="py-5 text-base text-white border dark:bg-gray-100 dark:text-gray-800  pl-10 focus:outline-none focus:bg-white focus:text-gray-900"
                   placeholder="Job title"
                 />

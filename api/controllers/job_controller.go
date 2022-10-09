@@ -36,7 +36,7 @@ func checkIfJobExists(jobId string) bool {
 	var job models.Job
 	config.DB.First(&job, jobId)
 
-	return job.ID != 0
+	return job.Id != 0
 }
 
 func CreateJob(w http.ResponseWriter, r *http.Request) {
@@ -45,8 +45,7 @@ func CreateJob(w http.ResponseWriter, r *http.Request) {
 
 	json.NewDecoder(r.Body).Decode(&job)
 
-	newJob := config.DB.Create(&job)
-	err = newJob.Error
+	config.DB.Create(&job)
 
 	if err != nil {
 		log.Panic(err)

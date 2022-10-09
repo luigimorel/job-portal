@@ -75,9 +75,8 @@ export const Footer = () => {
           </div>
           <div className="xl:flex flex-wrap justify-center xl:mt-24 mt-16 pb-6 pl-3 sm:pl-0">
             <div className="w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 xl:mb-0">
-              <p className="text-gray-800 ">
-                &copy; {new Date().getFullYear()}
-                <span className=" font-pacifico">Startup Jobs Africa</span>. All
+              <p className="text-gray-800 dark:text-gray-100 ">
+                &copy; {new Date().getFullYear()} Startup Jobs Africa. All
                 Rights Reserved
               </p>
             </div>

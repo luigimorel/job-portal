@@ -1,0 +1,7 @@
+{
+  "watch": ["go", "sh"],
+  "exclude": {
+    "files": ["*test*"]
+  },
+  "cmd": "go build . && ./main"
+}

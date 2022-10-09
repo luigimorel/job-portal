@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // import { HashLink } from "react-router-hash-link";
 import Ham from "../assets/icon-hamburger.svg";
@@ -14,25 +14,6 @@ const menuList = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [navClassName, setNavClassName] = useState("");
-  const [navItemClassName, setNavItemClassName] = useState("");
-
-  // Change the bg of the navbar
-  const changeBackground = () => {
-    if (window.pageYOffset > 0) {
-      setNavClassName("bg-black");
-      setNavItemClassName("text-white");
-    } else {
-      setNavClassName("");
-      setNavItemClassName("text-white");
-    }
-  };
-
-  useEffect(() => {
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
-  });
 
   return (
     <>

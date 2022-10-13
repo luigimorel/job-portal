@@ -10,3 +10,13 @@ export const getAllJobs = async () => {
     return new Error();
   }
 };
+
+export const postAJob = async () => {
+  try {
+    const response = await axios.post(baseURL + "/api/v1/create");
+    return response.data;
+  } catch (error) {
+    return new Error();
+  }
+};
+

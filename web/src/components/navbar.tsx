@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // import { HashLink } from "react-router-hash-link";
 import Ham from "../assets/icon-hamburger.svg";
@@ -17,7 +18,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed z-50  px-3 sm:px-20 lg:px-40 top-0 w-full">
+      <div className="fixed z-50 dark:bg-gray-900  px-3 sm:px-20 lg:px-40 top-0 w-full">
         <nav className="container flex justify-between items-center z-20">
           <div className="my-5 lg:my-6">
             <div aria-label="Home. logo" role="img">
@@ -41,17 +42,12 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-
-          <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 dark:focus:ring-indigo-100 dark focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 dark:border-indigo-100 text-indigo-700 dark:text-indigo-100 dark:hover:bg-indigo-800 px-4 sm:px-8 py-1 sm:py-2 text-sm">
-            <a
-              href=""
-              target={"_blank"}
-              className=" text-base"
-              rel="noreferrer"
-            >
+          <Link className=" text-base" to={"/post-job"}>
+            <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 dark:focus:ring-indigo-100 dark focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 dark:border-indigo-100 text-indigo-700 dark:text-indigo-100 dark:hover:bg-indigo-800 px-4 sm:px-8 py-1 sm:py-2 text-sm">
               Post a job
-            </a>
-          </button>
+            </button>
+          </Link>
+
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden focus:outline-none"

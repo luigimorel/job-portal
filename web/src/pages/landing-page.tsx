@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-
+import { useEffect, useState } from "react";
 import { Footer } from "../components/footer";
 import { Hero } from "../components/hero";
 import { Job } from "../components/job";
 import { Newsletter } from "../components/newsletter";
-import { getAllJobs } from "../services/jobservice";
+import { Partners } from "../components/partners";
+import { getHomeJobs } from "../services/jobservice";
 
 export const LandingPage = () => {
-  const [jobs, setJobs] = React.useState([]);
+  const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    getAllJobs().then((jobs) => {
+    getHomeJobs().then(jobs => {
       setJobs(jobs);
     });
   }, []);
@@ -19,7 +19,10 @@ export const LandingPage = () => {
     <>
       <Hero />
       <Job jobs={jobs} />
-      {/* <Partners /> */}
+      <div className=" flex flex-col py-20">
+        <h3 className=" text-center text-2xl font-bold md:mb-8 mb-4 "> Trusted By</h3>
+        <Partners />
+      </div>
       <Newsletter />
       <Footer />
     </>

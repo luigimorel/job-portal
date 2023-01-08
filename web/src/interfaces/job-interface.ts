@@ -9,6 +9,6 @@ export default interface JobProps {
     duration: string,
     industry: string,
     location_of_work_place: string,
-    date_posted: string
+    date_posted: string,
   ];
 }

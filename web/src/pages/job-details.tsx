@@ -12,10 +12,7 @@ export const JobDetails = () => {
   return (
     <>
       <Navbar />
-      <Jumbotron
-        header="Technical Support Engineer"
-        leadingParagraph="Apac, Apac, Uganda"
-      />
+      <Jumbotron header="Technical Support Engineer" leadingParagraph="Apac, Apac, Uganda" />
       <JobRequirements />
       <Footer />
     </>

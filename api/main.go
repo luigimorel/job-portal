@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/morelmiles/startupjobs/config"
-	"github.com/morelmiles/startupjobs/routes"
+	"github.com/morelmiles/job-portal/config"
+	"github.com/morelmiles/job-portal/routes"
 )
 
 func main() {

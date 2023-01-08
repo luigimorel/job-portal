@@ -4,17 +4,34 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/morelmiles/startupjobs/config"
-	"github.com/morelmiles/startupjobs/models"
+	"github.com/morelmiles/job-portal/config"
+	"github.com/morelmiles/job-portal/models"
 )
 
+// GetJobs fetches all the jobs in the database
 func GetJobs(w http.ResponseWriter, r *http.Request) {
 
 	var jobs []models.Job
 
-	config.DB.Find(&jobs)
+	limitStr := r.URL.Query().Get("limit")
+	pageStr := r.URL.Query().Get("page")
+
+	// Set default values if limit or page is not provided
+	limit := 10
+	page := 1
+	if limitStr != "" {
+		limit, _ = strconv.Atoi(limitStr)
+	}
+	if pageStr != "" {
+		page, _ = strconv.Atoi(pageStr)
+	}
+
+	offset := (page - 1) * limit
+
+	config.DB.Limit(limit).Offset(offset).Find(&jobs).Order("DESC")
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(&jobs)

@@ -1,10 +1,11 @@
-module github.com/morelmiles/startupjobs
+module github.com/morelmiles/job-portal
 
 go 1.18
 
 require (
 	github.com/gorilla/mux v1.8.0
 	github.com/joho/godotenv v1.4.0
+	github.com/rs/cors v1.8.2
 	gorm.io/driver/postgres v1.3.10
 	gorm.io/gorm v1.23.10
 )
@@ -20,7 +21,6 @@ require (
 	github.com/jackc/pgx/v4 v4.17.2 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.4 // indirect
-	github.com/rs/cors v1.8.2 // indirect
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa // indirect
 	golang.org/x/text v0.3.7 // indirect
 )

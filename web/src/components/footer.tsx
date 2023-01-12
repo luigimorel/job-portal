@@ -1,9 +1,9 @@
 export const Footer = () => {
   return (
-    <div className="pt-16">
+    <div className="pt-16   bg-white">
       <div className="w-full container border-gray-300 border-t lg:w-11/12 md:w-11/12 lg:mx-auto md:mx-auto">
-        <div className="container mx-auto py-12">
-          <div className="xl:flex lg:flex justify-between md:flex pt-6">
+        <div className="container mx-auto md:py-12 py-8">
+          <div className="xl:flex lg:flex justify-between md:flex">
             <div className="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0">
               <div className="flex items-center mb-6 xl:mb-0 lg:mb-0">
                 <div aria-label="Home. logo" role="img">
@@ -17,14 +17,14 @@ export const Footer = () => {
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         className="ccustom"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M25 30C26.3132 30 27.6136 29.7413 28.8268 29.2388C30.0401 28.7362 31.1425 27.9997 32.0711 27.0711C32.9997 26.1425 33.7362 25.0401 34.2388 23.8268C34.7413 22.6136 35 21.3132 35 20C35 16.0218 33.4196 12.2064 30.6066 9.3934C27.7936 6.58035 23.9782 5 20 5C16.0218 5 12.2064 6.58035 9.3934 9.3934C6.58035 12.2064 5 16.0218 5 20C5 21.3132 5.25866 22.6136 5.7612 23.8268C6.26375 25.0401 7.00035 26.1425 7.92893 27.0711C8.85752 27.9997 9.95991 28.7362 11.1732 29.2388C12.3864 29.7413 13.6868 30 15 30H25ZM20 9C17.0826 9 14.2847 10.1589 12.2218 12.2218C10.1589 14.2847 9 17.0826 9 20C9 20.7879 9.15519 21.5681 9.45672 22.2961C9.75825 23.0241 10.2002 23.6855 10.7574 24.2426C11.3145 24.7998 11.9759 25.2417 12.7039 25.5433C13.4319 25.8448 14.2121 26 15 26H25C25.7879 26 26.5681 25.8448 27.2961 25.5433C28.0241 25.2417 28.6855 24.7998 29.2426 24.2426C29.7998 23.6855 30.2417 23.0241 30.5433 22.2961C30.8448 21.5681 31 20.7879 31 20C31 17.0826 29.8411 14.2847 27.7782 12.2218C25.7153 10.1589 22.9174 9 20 9Z"
                         fill="#3064E8"></path>
                       <path
                         className="ccustom"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M13 35C11.2928 35 9.60238 34.612 8.02512 33.8582C6.44792 33.1044 5.0148 31.9995 3.80761 30.6066C2.60047 29.2137 1.64289 27.5602 0.989566 25.7403C0.336257 23.9204 0 21.9698 0 20C0 14.6957 2.10714 9.60859 5.85787 5.85786C9.60859 2.10714 14.6957 0 20 0C25.3043 0 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 21.9698 39.6637 23.9204 39.0104 25.7403C38.3571 27.5602 37.3995 29.2137 36.1924 30.6066C34.9852 31.9995 33.5521 33.1044 31.9749 33.8582C30.3976 34.612 28.7072 35 27 35H13ZM8.68629 8.68629C11.6869 5.68571 15.7565 4 20 4C24.2435 4 28.3131 5.68571 31.3137 8.68629C34.3143 11.6869 36 15.7565 36 20C36 21.5179 35.7404 23.0107 35.2457 24.3888C34.751 25.7668 34.0376 26.9854 33.1696 27.9869C32.3026 28.9873 31.3045 29.7452 30.25 30.2492C29.1981 30.752 28.0957 31 27 31H13C11.9043 31 10.8019 30.752 9.74999 30.2492C8.69549 29.7452 7.6974 28.9873 6.83037 27.9869C5.96242 26.9854 5.24903 25.7668 4.75433 24.3888C4.25961 23.0107 4 21.5179 4 20C4 15.7565 5.68571 11.6869 8.68629 8.68629Z"
                         fill="#3064E8"></path>
                       <path
@@ -39,20 +39,20 @@ export const Footer = () => {
 
             <div className="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end pl-3 sm:pl-0">
               <ul>
-                <li className="text-gray-800 dark:text-gray-50 font-bold text-xl mb-6">Popular Roles</li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="text-gray-800  font-bold text-xl mb-6">Popular Roles</li>
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Software Engineer</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">UX Designer</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Engineering Manager</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Copy Editor</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Manager</a>
                 </li>
               </ul>
@@ -60,17 +60,17 @@ export const Footer = () => {
 
             <div className="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end pl-3 sm:pl-0">
               <ul>
-                <li className="text-gray-800 dark:text-gray-50 font-bold text-xl mb-6">Popular Locations</li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="text-gray-800  font-bold text-xl mb-6">Popular Locations</li>
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Nairobi</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Dar es Salaam</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Kigali</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Kampala</a>
                 </li>
               </ul>
@@ -78,22 +78,22 @@ export const Footer = () => {
 
             <div className="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex xl:justify-end pl-3 sm:pl-0">
               <ul>
-                <li className="text-gray-800 dark:text-gray-50 font-bold text-xl mb-6">Community</li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="text-gray-800  font-bold text-xl mb-6">Community</li>
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Facebook</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Twitter</a>
                 </li>
-                <li className="text-base text-gray-600 dark:text-gray-50 dark:hover:text-gray-200 hover:text-gray-700 mb-5">
+                <li className="md:text-base text-sm text-gray-600 hover:text-gray-700 mb-5">
                   <a href="https://g">Linkedin</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="xl:flex flex-wrap justify-center xl:mt-24 mt-16 pb-2 pl-3 sm:pl-0">
-            <p className="text-gray-800 dark:text-gray-100 ">
+          <div className=" flex flex-row justify-center mt-20">
+            <p className="text-gray-800 md:text-base text-sm mx-auto flex  ">
               &copy; {new Date().getFullYear()} Jobs Portal. All Rights Reserved
             </p>
           </div>

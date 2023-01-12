@@ -1,13 +1,11 @@
 export const Newsletter = () => {
   return (
-    <div className="xl:flex xl:justify-end pt-16">
+    <div className="xl:flex bg-white xl:justify-end pt-16">
       <div className="container sm:mx-auto">
         <div className="block xl:flex justify-between xl:items-center lg:items-center md:flex">
           <div className="w-11/12 xl:w-4/12 mx-auto xl:mx-0 md:w-5/12">
-            <h1 className="text-gray-800 dark:text-gray-50  text-3xl font-extrabold mb-3 mt-12 xl:mt-0">
-              Sign Up for Email Updates
-            </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-100 mb-6">
+            <h1 className="text-gray-800  text-3xl font-extrabold mb-3 mt-12 xl:mt-0">Sign Up for Email Updates</h1>
+            <p className="text-lg text-gray-600  mb-6">
               Sign Up for our job digest newsletter to get the latest jobs updates and amazing offers delivered directly
               in your inbox.
             </p>
@@ -15,14 +13,14 @@ export const Newsletter = () => {
             <div className="flex w-full flex-wrap">
               <div className="w-full">
                 <div className="flex flex-col mb-3">
-                  <label className="text-base font-bold text-gray-800 dark:text-gray-100  mb-2" htmlFor="email">
+                  <label className="text-base font-bold text-gray-800   mb-2" htmlFor="email">
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     placeholder="johnstark97@gmail.com"
-                    className="focus:outline-none   dark:placeholder-gray-400 dark:border-gray-700  focus:border-primary border-gray-300 border rounded-sm py-3 outline-none pl-2 pr-2"
+                    className="focus:outline-none  focus:border-primary border-gray-300 border rounded-sm py-3 outline-none pl-2 pr-2"
                   />
                 </div>
                 <button

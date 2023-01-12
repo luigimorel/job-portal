@@ -1,14 +1,10 @@
-import { Footer } from "../components/footer";
-import Navbar from "../components/navbar";
+import Layout from "../components/Layout";
 
 const About = () => {
   return (
-    <>
-      <Navbar />
-      {/* TODO: Add an image here */}
-      About
-      <Footer />
-    </>
+    <Layout>
+      <p>this is the about page</p>
+    </Layout>
   );
 };
 

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Footer } from "../components/footer";
 import { Job } from "../components/job";
 import Jumbotron from "../components/jumbotron";
-import Navbar from "../components/navbar";
+import Layout from "../components/Layout";
 import { getAllJobs } from "../services/jobservice";
 
 const ExploreJobs = () => {
@@ -15,13 +14,10 @@ const ExploreJobs = () => {
   }, []);
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Jumbotron header="Find a perfect role that suits you" leadingParagraph="Power up your career!" />
       <Job jobs={jobs} />
-
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

@@ -13,7 +13,7 @@ function App() {
   return (
     <Routes>
       <Route element={<LandingPage />} path={"/"} />
-      <Route element={<JobDetails />} path={"/job/:id"} />
+      <Route element={<JobDetails />} path={"/jobs/:id"} />
       <Route element={<PostJob />} path={"/post-job"} />
       <Route element={<About />} path={"/about"} />
       <Route element={<ExploreJobs />} path={"/explore"} />

@@ -77,7 +77,7 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-          <div className="hidden lg:block text-sm">
+          <div className="hidden lg:flex text-sm">
             {menuList.map(x => (
               <Link key={x.id} className="mx-3 py-5 text-base text-gray-800  " to={x.route}>
                 {x.text}

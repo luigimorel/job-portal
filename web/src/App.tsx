@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import { Error404 } from "./components/error404";
 import { PostJob } from "./components/postjob";
 import About from "./pages/about";
-import ExploreJobs from "./pages/expore";
+import ExploreJobs from "./pages/explore";
 import { JobDetails } from "./pages/job-details";
 import { LandingPage } from "./pages/landing-page";
 

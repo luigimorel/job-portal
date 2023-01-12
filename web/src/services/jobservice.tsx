@@ -20,9 +20,13 @@ export const getAllJobs = async () => {
   }
 };
 
-export const postAJob = async () => {
+export const postAJob = async (formData: Object) => {
   try {
-    const response = await axios.post(baseURL + "/create");
+    const response = await axios.post(baseURL + "/create", formData, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     return response.data;
   } catch (error) {
     return new Error().message;

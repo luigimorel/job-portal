@@ -11,6 +11,7 @@ type Job struct {
 	City                string `gorm:"size:255;" json:"city"`
 	ApplicationLink     string `gorm:"size:255;" json:"application_link"`
 	Continent           string `gorm:"size:255;" json:"continent"`
+	ContactEmail        string `gorm:"size:255;" json:"contact_email"`
 	CompanyWebsite      string `gorm:"size:255;not null;" json:"company_website"`
 	Country             string `gorm:"size:255;" json:"country"`
 	Type                string `gorm:"size:255;not null;" json:"job_type"`

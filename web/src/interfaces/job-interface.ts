@@ -12,4 +12,5 @@ export default interface JobProps {
   country: string;
   application_link: string;
   company_website: string;
+  jobdescription: string;
 }

@@ -247,13 +247,21 @@ export const Form = () => {
             <label className=" text-gray-900 mb-2" htmlFor="jobdescription">
               Job Description <span className=" text-red-600">*</span>
             </label>
+            <input
+              type="hidden"
+              id="quill_html"
+              value={formState.jobdescription}
+              onChange={handleChange}
+              name="jobdescription"
+            />
+
             <ReactQuill
+              theme="snow"
               className=" text-gray-900"
               id="jobdescription"
               value={formState.jobdescription}
               onChange={handleChange}
             />
-            ;
           </div>
 
           <div className=" flex justify-center">

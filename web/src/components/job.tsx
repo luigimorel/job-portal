@@ -11,7 +11,7 @@ export const Job = ({ jobs }: any) => {
           <Link to={`/jobs/${x.id}`}>
             <div className="flex  flex-row hover:text-gray-600 items-center border border-gray-400 md:px-4 px-2.5 md:py-4 py-2 cursor-pointer  rounded-md xl:flex mb-5 justify-between xl:items-center lg:items-center md:flex">
               <div className=" flex flex-row items-center ">
-                <img src={x.logo} alt="" className=" h-16 w-16 rounded-full" />
+                <img src={x.logo} loading="lazy" alt="" className=" h-16 w-16 rounded-full" />
 
                 <div className=" flex flex-col mb-2 ml-4">
                   <h5 className=" text-sm md:text-xl capitalize">{x.title}</h5>
